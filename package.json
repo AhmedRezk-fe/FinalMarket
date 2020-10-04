@@ -8,7 +8,7 @@
     "compile-sass" : "node-sass sass/main.scss css/style.css --watch "
   },
   "keywords": [],
-  "author": "",
+  "author": "Ahmed Rizk",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
