@@ -1,0 +1,27 @@
+// flex mixin
+@mixin flex($justify, $align, $dir: row) {
+  display: flex;
+  flex-flow: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin btn-showMore($bg , $color , $border , $pading , $padding-b , $br ){
+    display: inline-block;
+    cursor: pointer;
+    padding: $pading ;
+    background: $bg;
+    border: $border ;
+    color: $color;
+    padding-bottom: $padding-b;
+    border-radius: $br;
+} 
+
+
+
+// hide overflowed text mixin
+@mixin overflowText($textOverflow, $whiteSpace, $overflow) {
+  text-overflow: $textOverflow; /* ellipsis if overflow initial otherwise */
+  white-space: $whiteSpace; /* nowrap if overflow initial otherwise */
+  overflow: $overflow; /* hidden if overflow initial otherwise */
+}

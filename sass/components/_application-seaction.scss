@@ -1,0 +1,38 @@
+.application-seaction{
+    width: 100%;
+    height: auto;
+    background: url(../img/intro-app.png) no-repeat center;
+    background-size: 100% 100%;
+    padding: 70px 0px;
+    color: $light;
+    .application-grid {
+        @include flex( initial, center, row);
+        .overlay-img {
+            min-width: 33%;
+        }
+        .application-intoduction {
+            margin-top: 70px;
+            h2 {
+                font-family: $fm;
+            }
+            p{
+                font-size: 17px;
+                width: 78%;
+                text-overflow: initial;
+                white-space: inherit;
+                line-height: 30px;
+            }
+            h3{
+                font-size: 22px;
+                margin-top: 60px;
+            }
+            .application-intoduction-img{
+                width: 370px;
+                img {
+                    width: 100%;
+                }
+            }
+        }        
+    }
+    
+}

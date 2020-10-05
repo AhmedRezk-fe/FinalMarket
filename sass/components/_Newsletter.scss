@@ -1,0 +1,47 @@
+section.Newsletter-section{
+    height: 500px;
+    background: url(../img/subscribe.png) no-repeat center;
+    background-size: 100% 100%;
+    .Newsletter-grid{
+        @include flex( space-around, initial, row);
+        .Newsletter-info {
+            max-width: 45%;
+            padding-top: 60px;
+            h2{
+                font-family: $fu;
+                font-size: 25px;
+            }
+        }
+        .Newsletter-form{
+            padding-top: 130px; 
+            min-width: 50%;
+            .form-group {
+                width: 100%;
+                position: relative;
+                input[type="search"] {
+                    width: 100%;
+                    height: 40px;
+                    padding: 0px 15px;
+                    padding-right: 106px;
+                    border: 1px solid #ddd;
+                    outline: none;
+                }
+                .btn-Subscribe {
+                    position: absolute;
+                    right: 2px;
+                    top: 2px;
+                    height: 36px;
+                    input[type="submit"] {
+                        width: 100%;
+                        height: 100%;
+                        padding: 0px 15px;
+                        background: $primary;
+                        color: $light;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.Products {
+    @include flex( space-between, initial, row) ;
+    flex-wrap: wrap;
+    .Product-item{
+        border: 1px solid #CECECE;
+        margin-bottom: 25px;
+        min-width: 255px;
+        // padding: 15px;
+        &.active{
+            svg[data-prefix="fas"] {
+                visibility: visible !important;
+                opacity: 1!important;
+                width: 1.6em !important;
+                height: auto !important;
+                color: $bk-icon !important ;
+            }
+            svg[data-prefix="far"] {
+                visibility: hidden !important;
+                opacity: 0 !important;
+                width: 0px !important;
+                height: 0px !important;
+            }
+        }
+        &.sale{
+            .Product-sale{
+                .lable-sale{
+                    label{
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        .Product-header {
+            padding: 15px;
+            padding-bottom: 0px;
+            @include flex( space-between, center, row);
+            .icon-favorites{
+                .icon{
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    background: $item-bg;
+                    position: relative;
+                    svg{
+                        color: #5A5754;
+                        visibility: visible;
+                        opacity: 1;
+                        width: 1.6em;
+                        height: auto;
+                        position: absolute;
+                        top:50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        &[data-prefix="fas"] {
+                            visibility: hidden;
+                            opacity: 0;
+                            width: 0px;
+                            height: 0px;
+                        }
+
+                    }
+                }
+            }
+            .Product-sale{
+                .lable-sale{
+                    label{
+                        padding: 4px 15px;
+                        background: $bk-icon;
+                        color: $light;
+                        margin-bottom: 0px;
+                        box-shadow: 0px 0px 5px 2px #eb858975;
+                        display: none;
+                    }
+                }
+            }
+        }
+        .Product-img{
+            width: 220px;
+            height: 220px;
+            position: relative;
+            margin: auto;
+            img{
+                max-width: 200px;
+                height: auto;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .Product-footer{
+            padding: 10px;
+            text-align: center;
+            background: $item-bg;
+            font-family: $fu;
+            h2{
+                font-size: 17px;
+                color: $black;
+            }
+            .price{
+                font-size: 12px;
+                .pc{
+                    color: $bk-icon;
+                }
+                .not{
+                    color: #B4B4B4;
+                    text-decoration: line-through;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+/* fix slick slider & bootstrap overflow width  */
+body {
+  min-width: 320px;
+  background: $light;
+  font-family: Regular;
+  position: relative;
+}
+
+.clier-fix {
+  clear: both;
+  display: inline;
+}
+
+nav .list ul.list-inline {
+  margin-bottom: 0px;
+  padding-right: 0px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+input,
+button {
+  outline: none;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+  padding: 50px 0px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

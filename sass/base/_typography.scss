@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Regular;
+  src: url(../fonts/Regular.ttf);
+}
+@font-face {
+  font-family: Medium;
+  src: url(../fonts/Medium.ttf);
+}
+@font-face {
+  font-family: LIGHT;
+  src: url(../fonts/LIGHT.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: BalooBhai-Regular;
+  src: url(../fonts/BalooBhai-Regular.ttf);
+}
+
+
+$fr : Regular;
+$fm : Medium;
+$fl : LIGHT;
+$fu : Montserrat-Bold;
+$fb : BalooBhai-Regular;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a {
+  @include overflowText(ellipsis, nowrap, hidden);
+}

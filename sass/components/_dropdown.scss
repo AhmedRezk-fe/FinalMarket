@@ -1,0 +1,18 @@
+li.options-item{
+    .dropdown{
+        .dropdown-btn{
+            @include flex( initial, center, row) ;
+            cursor: pointer;
+            .icon{
+                img{
+                    width: 24px;
+                }
+            }
+            .init{
+                @include flex( initial, start, column) ;
+                font-size: 13px;
+                padding: 0px 5px;
+            }
+        }
+    }
+}

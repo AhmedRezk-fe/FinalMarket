@@ -1,0 +1,41 @@
+.header-top-nav{
+    background: $light;
+    padding: 18px 0px;
+    font-family: $fu;
+    box-shadow: 0px 6px 6px -1px #00000029;
+    // font-weight: 700;
+    .click-nav{
+        ul{
+            @include flex(start , initial , column);
+            // li{
+
+            // }
+        }
+    }
+    // .overlay-header{
+
+    // }
+    .nav{
+        .list-nav{
+            @include flex(start , initial , row);
+            li{
+                &.active{
+                    a{
+                        color: $bk-icon;
+                    }
+                }
+                &:hover{
+                    a{
+                        color: $bk-icon;
+                    }
+                }
+                padding: 0px 8px;
+                a{
+                    transition: .3s ease-in-out;
+                    color: $black;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

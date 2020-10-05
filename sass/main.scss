@@ -1,0 +1,49 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "vendors/framworks/animate.scss";
+@import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/framworks/fontawesome-all.min.scss";
+@import "vendors/framworks/owl.carousel.min.scss";
+
+@import "base/reset";
+@import "base/typography";  
+ 
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/slider";
+@import "components/megamenu";
+@import "components/product-modal";
+@import "components/Categories";
+@import "components/titles";
+@import "components/Product";
+@import "components/application-seaction";
+@import "components/Advertisements-section";
+@import "components/Services";
+@import "components/Newsletter"; 
+@import "components/title-links";
+@import "components/cards";
+
+
+
+ 
+@import "layout/forms";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/sidebar";
+ 
+@import "media-queries/mobile";
+@import "media-queries/tablet";
+@import "media-queries/desktop";
+
+@import "pages/order";
+// @import "pages/home";
+// @import "pages/shop";
+// @import "pages/cart";
+// @import "pages/priv-policy";
+// @import "pages/wishlist";
+// @import "pages/profile";
+// @import "pages/addresses";
+// @import "pages/sign-in";
+// @import "pages/product";

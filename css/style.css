@@ -12899,6 +12899,126 @@ section.Newsletter-section {
             border: none;
             outline: none; }
 
+.title-links {
+  padding: 25px 0px; }
+  .title-links ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: initial;
+    align-items: center; }
+    .title-links ul li {
+      color: #000;
+      font-family: Montserrat-Bold; }
+      .title-links ul li a {
+        color: #ADADAD;
+        margin-right: 15px; }
+
+.card-order {
+  width: calc(100% - 285px); }
+  .card-order .card-order-top {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center; }
+    .card-order .card-order-top .card-order-top-info h2 {
+      font-size: 21px;
+      font-family: Medium; }
+    .card-order .card-order-top .card-order-top-info p {
+      color: #A2A2A2;
+      font-size: 13px;
+      font-family: Medium; }
+    .card-order .card-order-top .card-order-top-select .card-sort {
+      background: #0DC6B4;
+      padding: 8px 6px; }
+      .card-order .card-order-top .card-order-top-select .card-sort span {
+        color: #fff;
+        font-size: 14px; }
+      .card-order .card-order-top .card-order-top-select .card-sort select {
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 0px 5px;
+        font-family: BalooBhai-Regular; }
+        .card-order .card-order-top .card-order-top-select .card-sort select option {
+          background: #fff;
+          color: #000; }
+
+.card-component .card-order-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: initial;
+  align-items: center;
+  background: #0DC6B4;
+  padding: 10px 15px;
+  color: #fff;
+  font-family: Medium; }
+  .card-component .card-order-header .num-order {
+    margin-right: 20px; }
+  .card-component .card-order-header .date-order {
+    font-size: 12px;
+    color: #E6E6E6; }
+
+.card-component .card-items {
+  padding: 30px;
+  box-shadow: 0px 0px 7px 0px #00000029; }
+  .card-component .card-items .card-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center; }
+    .card-component .card-items .card-item:last-child {
+      border-bottom: 0px; }
+    .card-component .card-items .card-item .card-ditails {
+      display: flex;
+      flex-flow: row;
+      justify-content: initial;
+      align-items: center; }
+      .card-component .card-items .card-item .card-ditails .card-ditails-img {
+        height: 140px;
+        width: 180px;
+        position: relative; }
+        .card-component .card-items .card-item .card-ditails .card-ditails-img img {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+          width: auto;
+          max-width: 90%; }
+      .card-component .card-items .card-item .card-ditails .card-ditails-information {
+        font-family: Medium; }
+        .card-component .card-items .card-item .card-ditails .card-ditails-information h6 {
+          font-size: 14px;
+          color: #7A7875;
+          margin-bottom: 0rem; }
+        .card-component .card-items .card-item .card-ditails .card-ditails-information h4 {
+          font-size: 20px; }
+        .card-component .card-items .card-item .card-ditails .card-ditails-information h2 {
+          color: #EB8589;
+          font-size: 20px; }
+    .card-component .card-items .card-item .card-item-options .options-select {
+      text-align: center; }
+      .card-component .card-items .card-item .card-item-options .options-select ul {
+        margin-bottom: 0px;
+        border: 1px solid #ddd; }
+        .card-component .card-items .card-item .card-item-options .options-select ul li {
+          margin-bottom: 0px;
+          height: 42px; }
+          .card-component .card-items .card-item .card-item-options .options-select ul li.title-top a {
+            font-family: Medium;
+            background: #0DC6B4;
+            color: #fff; }
+          .card-component .card-items .card-item .card-item-options .options-select ul li a {
+            padding: 0px 20px;
+            display: inline-block;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            height: 42px;
+            line-height: 46px;
+            color: #000; }
+
 .header-top {
   background: #0DC6B4;
   display: flex;
@@ -13095,7 +13215,8 @@ section.Newsletter-section {
 .header-top-nav {
   background: #fff;
   padding: 18px 0px;
-  font-family: Montserrat-Bold; }
+  font-family: Montserrat-Bold;
+  box-shadow: 0px 6px 6px -1px #00000029; }
   .header-top-nav .click-nav ul {
     display: flex;
     flex-flow: column;
@@ -13183,3 +13304,55 @@ footer .footer-top {
     line-height: 60px; }
     .footer-bottom .copy-right p a {
       color: #fff; }
+
+.side_bar {
+  min-width: 260px;
+  margin-top: 20px; }
+  .side_bar ul {
+    box-shadow: 0px 0px 7px 0px #00000029;
+    background: #fff;
+    border-radius: 2px; }
+    .side_bar ul li {
+      transition: .3s ease-in-out;
+      padding: 10px 20px;
+      border: 1px solid #00000008; }
+      .side_bar ul li:hover {
+        background: #F5F5F5; }
+        .side_bar ul li:hover a .icon img {
+          filter: opacity(0.5) drop-shadow(0 0 0 #0DC6B4); }
+        .side_bar ul li:hover a span.name {
+          color: #0DC6B4; }
+      .side_bar ul li.active {
+        background: #F5F5F5; }
+        .side_bar ul li.active a .icon img {
+          filter: opacity(0.5) drop-shadow(0 0 0 #0DC6B4); }
+        .side_bar ul li.active a span.name {
+          color: #0DC6B4; }
+      .side_bar ul li a {
+        transition: .3s ease-in-out;
+        display: inline-block;
+        display: flex;
+        flex-flow: row;
+        justify-content: initial;
+        align-items: flex-end;
+        width: 100%; }
+        .side_bar ul li a .icon {
+          transition: .3s ease-in-out;
+          display: inline-block;
+          width: 35px;
+          vertical-align: bottom; }
+          .side_bar ul li a .icon img {
+            width: 22px;
+            transition: .3s ease-in-out; }
+        .side_bar ul li a span.name {
+          transition: .3s ease-in-out;
+          color: #000; }
+
+section.order-section {
+  padding-top: 0px; }
+
+.order-gride {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: initial; }

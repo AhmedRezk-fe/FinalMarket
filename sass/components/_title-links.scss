@@ -1,0 +1,14 @@
+.title-links{
+    padding: 25px 0px;
+    ul{
+        @include flex(initial , center , row ); 
+        li{
+            color: #000;
+            font-family: $fu;
+            a{
+                color: #ADADAD;
+                margin-right: 15px;
+            }
+        }
+    }
+}
