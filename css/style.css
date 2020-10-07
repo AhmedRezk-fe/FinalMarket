@@ -12915,6 +12915,10 @@ section.Newsletter-section {
 
 .card-order {
   width: calc(100% - 285px); }
+  .card-order.empty .card-component .card-order-header {
+    background: #E6E6E6; }
+    .card-order.empty .card-component .card-order-header .num-order {
+      color: #000; }
   .card-order .card-order-top {
     display: flex;
     flex-flow: row;
@@ -12960,11 +12964,35 @@ section.Newsletter-section {
     color: #E6E6E6; }
 
 .card-component .card-items {
-  padding: 30px;
+  padding: 15px;
   box-shadow: 0px 0px 7px 0px #00000029; }
+  .card-component .card-items .order-empty {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px; }
+    .card-component .card-items .order-empty .icon {
+      margin-bottom: 15px; }
+      .card-component .card-items .order-empty .icon img {
+        width: 60px; }
+    .card-component .card-items .order-empty h3 {
+      font-size: 18px;
+      color: #000;
+      font-family: Medium;
+      margin-bottom: 25px; }
+    .card-component .card-items .order-empty a {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #0DC6B4;
+      color: #fff; }
+  .card-component .card-items-address .card-ditails {
+    justify-content: space-between !important;
+    align-items: initial !important;
+    width: 100%; }
   .card-component .card-items .card-item {
     border-bottom: 1px solid #ccc;
-    padding: 10px 10px;
+    padding: 10px 0px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -12994,10 +13022,40 @@ section.Newsletter-section {
           color: #7A7875;
           margin-bottom: 0rem; }
         .card-component .card-items .card-item .card-ditails .card-ditails-information h4 {
-          font-size: 20px; }
+          font-size: 18px; }
         .card-component .card-items .card-item .card-ditails .card-ditails-information h2 {
           color: #EB8589;
           font-size: 20px; }
+        .card-component .card-items .card-item .card-ditails .card-ditails-information h5 {
+          font-family: Medium;
+          font-size: 16px; }
+        .card-component .card-items .card-item .card-ditails .card-ditails-information p {
+          color: #7A7875;
+          font-size: 11px; }
+          .card-component .card-items .card-item .card-ditails .card-ditails-information p span {
+            color: #0DC6B4; }
+      .card-component .card-items .card-item .card-ditails .Quantity-card {
+        padding-left: 35px; }
+        .card-component .card-items .card-item .card-ditails .Quantity-card span {
+          color: #7A7875;
+          font-size: 14px; }
+        .card-component .card-items .card-item .card-ditails .Quantity-card select {
+          margin-left: 5px;
+          padding: 5px 10px; }
+    .card-component .card-items .card-item .card-ditails-address:nth-child(2) {
+      max-width: 32%; }
+    .card-component .card-items .card-item .card-ditails-address {
+      min-width: 20%; }
+      .card-component .card-items .card-item .card-ditails-address label {
+        font-size: 13px;
+        font-family: Medium;
+        color: #A2A2A2; }
+      .card-component .card-items .card-item .card-ditails-address h3 {
+        font-size: 15px;
+        text-overflow: clip;
+        white-space: initial;
+        color: #5A5754;
+        font-family: Medium; }
     .card-component .card-items .card-item .card-item-options .options-select {
       text-align: center; }
       .card-component .card-items .card-item .card-item-options .options-select ul {
