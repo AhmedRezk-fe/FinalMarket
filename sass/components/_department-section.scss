@@ -1,0 +1,154 @@
+.department-section{
+    padding-bottom: 100px;
+    .department-grid {
+        @include flex (space-between , initial ,row  );
+        .department-img {
+            min-width: 42%;
+            position: relative;
+            img {
+                width: auto;
+                max-width: 90%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .department-information {
+            width: 100%;
+            padding-left: 30px;
+            .department-info-header {
+                margin-bottom: 30px;
+                h3 {
+                    color: #7A7875;
+                    font-size: 16px;
+                    font-family: $fm;
+                }
+                h2 {
+                    font-family: $fm;
+                    font-size: 26px;
+                }
+                .department-info-header-price {
+                    @include flex (initial , initial ,row  );
+                    h3 {
+                        font-size: 31px;
+                        color: $black;
+                        margin-right: 21px;
+                        font-family: $fm;
+                        span.not {
+                            color: #B4B4B4;
+                            font-size: 15px;
+                            font-family: $fm;
+                            text-decoration: line-through;
+                            vertical-align: middle;
+                        }
+                    }
+                    h4 {
+                        color: #7A7875;
+                        font-family: $fm;
+                        font-size: 18px;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+        .department-info-content{
+            margin-bottom: 35px;
+            ul.list-info-content {
+                li {
+                    background: #F6F6F6;
+                    margin-bottom: 5px;
+                    padding: 10px 15px;
+                    &:first-child {
+                        @include flex (space-between , center ,row  );
+                    }
+                    h3 {
+                        @include flex (space-between , center ,row  );
+                        font-size: 18px;
+                        color: #7A7875;
+                        font-family: $fm;
+                        margin-bottom: 0px;
+                        span {
+                            color: $black;
+                            margin-left: 5px;
+                        }
+                    }
+                    a {
+                        font-size: 18px;
+                        font-family: $fm;
+                        color: #7A7875;
+                        text-decoration: underline !important;
+                    }
+                    h4 {
+                        color: $black;
+                        font-family: $fm;
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 18px;
+                        margin-bottom: 0px;
+                        color: #7A7875;
+                        font-family: $fr;
+                        span {
+                            color: $primary;
+                        }
+                    } 
+                }
+            }
+        }
+        .department-info-footer{
+            form{
+                @include flex (initial , flex-end ,row  );
+                .number-item{
+                    h3{
+                        color: #7A7875;
+                        font-size: 17px;
+                        font-family: Medium;
+                    }
+                    
+                   select {
+                        outline: none;
+                        height: 40px;
+                        padding: 0px 25px;
+                        text-align: center;
+                        border: 1px solid #E6E6E6;
+                        margin-right: 15px;
+                    }
+                }
+                .btn-add-department {
+                    button {
+                        outline: none;
+                        color: #fff;
+                        border: none;
+                        height: 40px;
+                        background: #EB8589;
+                        padding: 0px 40px;
+                        margin-right: 15px;
+                    }
+                }
+                                    
+                .btn-favorite-department {
+                    a {
+                        display: inline-block;
+                        height: 40px;
+                        line-height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        vertical-align: bottom;
+                        text-align: center;
+                        background: #F6F6F6;
+                        img{
+                            width:23px
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+section.offers-section.offers-section-n-title{
+    .title-page {
+        text-align: left;
+    }
+}
