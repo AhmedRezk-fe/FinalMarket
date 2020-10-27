@@ -1,10 +1,16 @@
+
 @import "abstracts/variables";
 @import "abstracts/mixins";
+
 
 @import "vendors/framworks/animate.scss";
 @import "vendors/bootstrap/bootstrap.scss";
 @import "vendors/framworks/fontawesome-all.min.scss";
 @import "vendors/framworks/owl.carousel.min.scss";
+@import "vendors/framworks/rangeslider";
+
+
+
 
 @import "base/reset";
 @import "base/typography";  
@@ -24,10 +30,10 @@
 @import "components/title-links";
 @import "components/cards";
 @import "components/department-section";
+@import "components/auth/auth";
+@import "components/product-page-items";
 
 
-
- 
 @import "layout/forms";
 @import "layout/header";
 @import "layout/navigation";
@@ -39,6 +45,9 @@
 @import "media-queries/desktop";
 
 @import "pages/order";
+@import "pages/product-filter";
+
+
 // @import "pages/home";
 // @import "pages/shop";
 // @import "pages/cart";
@@ -48,3 +57,15 @@
 // @import "pages/addresses";
 // @import "pages/sign-in";
 // @import "pages/product";
+
+
+// responsive 
+
+// nav
+@import "components/media-query/nav-responsive";
+// component
+@import "components/media-query/media-query-xs";
+@import "components/media-query/media-query-sm";
+@import "components/media-query/media-query-md";
+@import "components/media-query/media-query-lg";
+@import "components/media-query/media-query-el";

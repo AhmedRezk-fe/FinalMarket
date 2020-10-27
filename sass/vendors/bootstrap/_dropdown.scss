@@ -3,7 +3,7 @@
 .dropright,
 .dropdown,
 .dropleft {
-  position: relative;
+  // position: relative;
 }
 
 .dropdown-toggle {
@@ -19,21 +19,22 @@
   top: 100%;
   left: 0;
   z-index: $zindex-dropdown;
-  display: none; // none by default, but block on "open" of the menu
-  float: left;
+  // display: none; // none by default, but block on "open" of the menu
+  // float: left;
   min-width: $dropdown-min-width;
-  padding: $dropdown-padding-y 0;
-  margin: $dropdown-spacer 0 0; // override default ul
+  // padding: $dropdown-padding-y 0;
+  // margin: $dropdown-spacer 0 0; // override default ul
   @include font-size($dropdown-font-size);
   color: $dropdown-color;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
   background-color: $dropdown-bg;
   background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($dropdown-border-radius);
-  @include box-shadow($dropdown-box-shadow);
+  // border: $dropdown-border-width solid $dropdown-border-color;
+  // @include border-radius($dropdown-border-radius);
+  // @include box-shadow($dropdown-box-shadow);
 }
+
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {

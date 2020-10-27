@@ -1,0 +1,296 @@
+.product_filter_section{
+
+    ul.list-box.active li.header-box span.icom:before {
+        transform: translate(-50%, -50%) rotate(180deg) !important;
+    }
+
+    .ad-search-box {
+        background: #FAFAFA;
+    }
+
+    ul.list-box .btn-aplay {
+        padding-bottom: 25px;
+        margin-top: 25px;
+        text-align: right;
+    }
+
+    ul.list-box .btn-aplay button.btn {
+        background: $min ;
+        color: #fff;
+        outline: none;
+
+    }
+    .range-slider {
+        position: relative;
+        height: 80px;
+    }
+    
+    .ad-search-box {
+        padding: 0px 20px;
+    }
+        
+    .ad-search-box label.container_checkbox span.checkmark {
+        left: 0px;
+        right: initial;
+        // top: 4px;
+    }
+    
+    ul.list-box {
+        margin-bottom: 25px;
+    }
+    
+    li.header-box {
+        position: relative;
+        height: 46px;
+        line-height: 42px;
+        cursor: pointer;
+    }
+    
+    li.header-box span.icom {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #E6E6E6 ;
+        border-radius: 3px;
+        right: 0px;
+        top: 13px;
+        background: $light;
+    }
+    
+    li.header-box span.name {
+        font-family: $fb;
+        font-size: 1.5rem;
+    }
+    
+    li.header-box span.icom:after {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 2px;
+        background: #E6E6E6 ;
+        transform: translate(-50%,-50%) ;
+        left: 50%;
+        top: 50%;
+    }
+    li.header-box span.icom:before {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 12px;
+        background: #E6E6E6 ;
+        transform: translate(-50%,-50%) rotate(90deg) !important;
+        left: 50%;
+        top: 50%;
+    }
+    .extra-controls input {
+        padding: 5px 15px;
+        border: 1px solid #B1B1B1 ;
+        width: 46%;
+        outline: none;
+        border-radius: 4px;
+    }
+    
+    .extra-controls {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .irs--round .irs-bar {
+        // display: none !important;
+        top: 36px;
+        height: 4px;
+        background-color: $min ;
+    }
+    
+    span.irs-from {
+        background-color: $min  !important;
+        display: none;
+    }
+    
+    span.irs-to {
+        background: $min  !important;
+        display: none;
+    }
+    
+    .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+        border-top-color: $min  !important;
+    }
+    
+    .irs--round .irs-handle {
+        border: 4px solid $min ;
+        box-shadow: 0 1px 3px #000;
+        background-color: $min;
+    }
+    span.irs-min {
+        display: none;
+    }
+    
+    span.irs-max {
+        display: none;
+    }
+    span{
+        overflow:unset;
+    }
+    .form-group textarea {
+        width: 100%;
+        border-radius: 5px;
+        height: 105px;
+        border: 1px solid #55b378;
+        padding: 10px 15px;
+        outline: none;
+    }
+    
+    
+    /* The container */
+    .container_checkbox {
+        display: inline-block;
+        color: #46ad6d;
+        font-size: 18px !important;
+        position: relative;
+        padding-left: 35px;
+        // margin-right: 40px !important;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default checkbox */
+      .container_checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        border-radius: 4px;
+        width: 22px;
+        background-color: $light;
+        border: solid $min;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .container_checkbox:hover input ~ .checkmark {
+        background-color: $light;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .container_checkbox input:checked ~ .checkmark {
+        background-color: $light;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      .container_checkbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      .container_checkbox .checkmark:after {
+        left: 6px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid $min;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      .product_filter_section .container_checkbox:hover input ~ .checkmark {
+        background-color: $light !important;
+    }
+    .form-group-checkbox {
+        font-size: 20px;
+    }
+    
+    .form-group-checkbox label {
+        margin: 15px 0px;
+    }
+    
+}
+.product_filter_section{
+    padding-top: 0px;
+    .product-filter-grid{
+        display: flex;
+        .department-filter{
+            min-width: 285px;
+            .container_checkbox {
+                display: inline-block;
+                color: $black;
+            }
+            margin-right: 25px;
+            .header-box{
+                margin-bottom: 25px;
+            }
+            .form-group{
+                input{
+                    height: 40px;
+                    padding: 0px 15px;
+                    outline: none;
+                    border: 1px solid #E6E6E6;
+                }
+                input::placeholder {
+                    color: #B1B1B1;
+                }
+            }
+            .extra-controls-input{
+                
+                label{
+                    font-size: 12px;
+                    color: #B1B1B1;
+                }
+                input{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    .product_filter_sort {
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-family: $fu;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .product_filter_sort span {
+        padding-right: 10px;
+        color: #000;
+    }
+    
+    .product_filter_sort select {
+        background: transparent;
+        border: none;
+        color: #0dc6b4;
+        outline: none;
+        option{
+            color: #000;
+        }
+    }
+  ul.list-box ul.list-content {
+        max-height: 307px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    
+}

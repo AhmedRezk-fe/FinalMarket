@@ -1,0 +1,101 @@
+// click-nav
+
+.header-top-nav {
+    .click-nav {
+
+        display: none;
+        position: absolute;
+        z-index: 102;
+        right: 16px;
+        top: 164px;
+        ul {
+            display: flex;
+            flex-flow: column;
+            width: 60px;
+            height: 32px;
+            // background: #0a8d80;
+            align-items: center;
+            justify-content: center;
+            border-radius: 13px;
+            cursor: pointer;
+            li {
+                width: 26px;
+                height: 2px;
+                background: #fff;
+                margin-top: 5px;
+                transition: .7s cubic-bezier(0, 1.59, 0, 1.2);
+                &:nth-child(1) {
+                    margin-top: 0px;
+                    transition: .7s cubic-bezier(0, 1.59, 0, 1.2);
+                }
+            }
+        }
+
+    }
+    .click-nav.open {
+        top: 32px;
+        ul li {
+            background: #eb8589;
+            height: 3px;
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(1) {
+                transform: rotate(27deg) translate(7px, 1px);
+            }
+            &:nth-child(3) {
+                transform: rotate(-46deg) translate(9px, 0px);
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 575.98px) { 
+    // list nav
+    .header-top-nav {
+        .nav {
+            position: absolute;
+            top: 0px;
+            z-index: 101;
+            width: 75%;
+            left: 0;
+            height: 100vh;
+            background: #fff;
+            transform: translate(-100% ,0%);
+            transition: 0.4s cubic-bezier(0, 0.95, 0, 0.8);
+            &.block-nav{
+                transform: translate(0% ,0%);
+            } 
+            ul.list-nav{
+                width: 100%;
+                padding-top: 80px;
+                height: 100%;
+                overflow: auto;
+                & > li{
+                    width: 100%;
+                    border-bottom: 1px solid #eee;
+                    margin-bottom: 2px;
+                    height: 40px;
+                    line-height: 40px;
+                    position: relative;
+                }
+            }
+        }
+        .overlay-header{
+            position: absolute;
+            top: 0px;
+            z-index: 100;
+            width: 0%;
+            right: 0;
+            height: 100vh;
+            background: #00000047;
+            transform: translate(100% ,0%);
+            transition: 0.4s cubic-bezier(0, 0.95, 0, 0.8);
+            &.block-nav{
+                transform: translate(0% ,0%);
+                width: 75%;
+            } 
+        }  
+    }
+}

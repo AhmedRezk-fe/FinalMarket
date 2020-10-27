@@ -1,6 +1,5 @@
 .header-top-nav{
     background: $light;
-    padding: 18px 0px;
     font-family: $fu;
     box-shadow: 0px 6px 6px -1px #00000029;
     // font-weight: 700;
@@ -18,6 +17,8 @@
     .nav{
         .list-nav{
             @include flex(start , initial , row);
+            padding: 18px 0px;
+            position: relative;
             li{
                 &.active{
                     a{
@@ -38,4 +39,460 @@
             }
         }
     }
+}
+
+
+.header-top-nav .nav .list-nav .dropdown-menu {
+    top: 59px;
+    transition: 0.3s cubic-bezier(0, 0.95, 0, 0.8);
+    transform: scale(1);
+    visibility: hidden;
+    opacity: 0;
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul .dropdown-menu.active {
+    top: 0px;
+    transition: 0.1s cubic-bezier(0, 0.95, 0, 0.8);
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+    left: calc(100% - 1px);
+}
+
+.header-top-nav .nav .list-nav .dropdown-menu.active {
+    top: 0;
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul {
+    position: relative;
+
+}
+.header-top-nav .nav .list-nav > .dropdown-menu  {
+    // position: relative;
+    z-index: 9;
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul .dropdown-menu {
+    z-index: 4;
+}
+
+.header-top-nav .nav .list-nav .dropdown-menu ul .dropdown-menu {
+    left: calc(100% - 10px);
+    top:0px;
+    min-width: 250px;
+    height: 100%;
+}
+
+li.title-header {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul  a{
+    font-family: $fu;
+    color: #aaa !important;
+
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul li.title-header  a{
+    font-family: $fu !important;
+    color: #aaa !important;
+
+    // display: inline-block;
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul li  a{
+    font-family: $fr !important;
+
+    display: block;
+}
+
+.header-top-nav .nav .list-nav .dropdown-menu > ul {
+    background: #E7FEFB;
+    height: 100%;
+}
+
+.header-top-nav .nav .list-nav .dropdown-menu ul li {
+    line-height: 40px;
+    font-size: 17px !important;
+    font-family: $fr;
+    transition: .3s ease-in-out;
+    a{
+        color: #000 !important;
+    }
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul li:hover, .header-top-nav .nav .list-nav .dropdown-menu ul li.active {
+    background: #fff;
+}
+.header-top-nav .nav .list-nav .dropdown-menu ul  a.view-all {
+    font-family: 'Regular';
+}
+
+
+.header-top-nav .nav .list-nav .dropdown-menu > ul ul {
+    background: #fff;
+}
+.title-header-grid {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #aaaaaa40;
+    height: 60px;
+    // margin-bottom: 22px;
+}
+
+.title-header-grid h3 {
+    margin-bottom: 0px;
+    color: #31261D;
+    font-size: 19px;
+    font-family: Montserrat-Bold;
+    text-overflow: clip;
+    white-space: inherit;
+    overflow: inherit;
+}
+
+.check-out-steps .header-top .header-top-contact .container .header-contact li.link {
+    padding-right: 15px;
+    order: 1;
+}
+.check-out-steps .header-top .header-top-contact .header-contact ul li:nth-child(1) {
+    order: 2;
+    padding-left: 15px;
+}
+.check-out-steps .header-top .header-top-contact .header-contact ul li:nth-child(2) {
+    order: 3;
+}
+
+.check-out-steps .header-top .header-top-contact .container .header-contact li.link a {
+    color: #fff;
+    display: inline-block;
+    display: flex;
+}
+
+.check-out-steps .header-top .header-top-contact .container .header-contact li.link a span.icon {
+    padding-right: 10px;
+    font-size: 26px;
+    display: flex;
+}
+header.check-out-steps .logo {
+    width: 180px;
+}
+header.check-out-steps .logo img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.section-steps {
+    padding: 40px;
+    background: #fff;
+    font-family: $fu;
+}
+
+.section-steps .orderit__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.section-steps .orderit__header .step span.num {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #A2A2A2;
+    border: 1px solid #A2A2A2;
+    text-align: center;
+    border-radius: 50%;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+.section-steps .orderit__header .step.done{
+    color: #000;
+}
+
+.section-steps .orderit__header .step.done span.num {
+    color: #fff;
+    border: 1px solid #EB8589;
+    background: #EB8589;
+}
+.section-steps .orderit__header .step{
+    position: relative;
+    color: #A2A2A2;
+    width: 100%;
+}
+
+// body.check-out-step-body {
+//     background: #E6E6E6;
+// }
+section.orderit {
+    background: #e6e6e65c;
+}
+.tab{
+    display: none;
+}
+
+.section-steps .orderit__header .step:nth-child(1):after,.section-steps .orderit__header .step:nth-child(2):after {
+    position: absolute;
+    content: "";
+    width: 65%;
+    height: 7px;
+    border-radius: 15px;
+    background: #A2A2A2;
+    top: 15px;
+    margin-left: 45px;
+}
+
+.section-steps .orderit__header .step:nth-child(1) {
+    text-align: left;
+}
+
+.section-steps .orderit__header .step:nth-child(2) {
+    text-align: center;
+}
+
+.section-steps .orderit__header .step:nth-child(3) {
+    text-align: right;
+}
+
+
+.title-steps {
+    margin-bottom: 20px;
+}
+
+.title-steps h2 {
+    font-size: 26px;
+    color: #31261D;
+    font-family: $fm;
+}
+
+.orderit__body .form {
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 5px #0000000a;
+}
+.orderit__steps .form-group label{
+    display: block;
+}
+.orderit__steps .form-group input{
+    width: 100%;
+    height: 46px;
+    padding: 0px 15px;
+    background: transparent;
+    border-radius:3px;
+    border: 1px solid #A2A2A2;
+    outline: none;
+}
+.orderit__steps .form-group textarea{
+    width: 100%;
+    height: 100px;
+    padding: 0px 15px;
+    background: transparent;
+    border-radius:3px;
+    border: 1px solid #A2A2A2;
+    outline: none;
+    padding-top: 5px;
+}
+button.orderit__btn {
+    margin-top: 20px;
+    padding: 6px 30px;
+    border: none;
+    background: #0dc6b4;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+section.orderit .Summary-product {
+    width: 98%;
+    margin-top: 60px;
+}
+.form-add-Address a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 30px;
+    border: none;
+    background: #0dc6b4;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+
+
+
+.select-box .container_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .select-box .container_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  section.orderit ul.list-content li {
+    padding-right: 25px;
+}
+  
+  /* Create a custom checkbox */
+  .select-box .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+//   .container:hover input ~ .checkmark {
+//     background-color: #ccc;
+//   }
+  
+  /* When the checkbox is checked, add a blue background */
+  .select-box .container_checkbox input:checked ~ .checkmark {
+    border: 2px solid #0dc6b4;
+    color: #000;
+
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .select-box .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .select-box .container_checkbox input:checked ~ .checkmark:after {
+    display: none;
+  }
+  
+  /* Style the checkmark/indicator */
+  .select-box .container_checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  section.orderit ul.list-content {
+    display: flex;
+    justify-content: initial;
+}
+
+
+.select-box span.checkmark {
+    position: unset;
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    height: auto;
+    background: #fff !important;
+    border-radius: 0px;
+    border: 2px solid transparent;
+    color: #a2a2a2;
+    font-family: $fm;
+}
+
+span.checkmark span.icon-img {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-right: 10px;
+    width: 55px;
+}
+
+span.checkmark span.icon-img img {
+    width: 100%;
+}
+
+.select-box .form-group p.dis {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: initial;
+    overflow: initial;
+    color: #5A5754;
+    font-family: $fm;
+}
+
+
+
+li.options-item.dropdown-menu-small {
+    position: relative;
+}
+
+li.options-item.dropdown-menu-small .menu-small {
+    position: absolute;
+    z-index: 91;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0, 0.95, 0, 0.8);
+    left: 0;
+    top: 53px;
+
+}
+li.options-item.dropdown-menu-small .menu-small.active {
+    position: absolute;
+    z-index: 91;
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    top: 35px;
+}
+
+li.options-item.dropdown-menu-small .menu-small .side_bar {
+
+    min-width: 190px;
+}
+
+li.options-item.dropdown-menu-small .menu-small .side_bar ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li.options-item.dropdown-menu-small .menu-small .side_bar ul li {
+    width: 90%;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #00000008;
+}
+
+
+li.options-item.dropdown-menu-small .menu-small .side_bar ul li span.icon img {
+    filter: opacity(0.5) drop-shadow(0 0 0 #000);
+    width: 25px !important;
+}
+
+li.options-item.dropdown-menu-small .menu-small .side_bar ul li span.name {display: inline-block;font-size: 14px;}
+
+li.options-item.dropdown-menu-small .menu-small .side_bar ul li a {
+    align-items: center;
 }
