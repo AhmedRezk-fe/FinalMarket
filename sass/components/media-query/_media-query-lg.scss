@@ -1,4 +1,40 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    
+    .header-top .header-top-contact {
+        font-size: 14px;
+    }
+    .header-top .header-top-options .container .logo {
+        max-width: 150px;
+    }
+    .show-nav .owl-nav button.owl-prev {
+        right: -25px;
+    }
+    .show-nav .owl-nav button.owl-next {
+        left: -25px;
+    }
+    .header-top-nav .nav .list-nav li a {
+        font-size: 14px;
+    }
+    .card-component .card-items-address .card-ditails {
+        padding-right: 20px;
+    }
+    section.sign_in .sign_in-container .row.row-grid .col-md-6.col-sm-6.col-xs-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    section.sign_in .sign_in-container .row-grid .col-md-6.col-sm-6.col-xs-12:nth-child(2){
+        padding-left: 0px;
+    }
+    section.sign_in .sign_in-container .row-grid .col-md-6.col-sm-6.col-xs-12:nth-child(1){
+        padding-right: 0px;
+    }
+    section.sign_in .sign_in-container .slider-auth .slider-auth-img {
+        margin-top: 150px;
+    }
+    section.product-page-items .card-component .card-items .card-item .card-ditails .card-ditails-img {
+        width: 140px;
+    }
+    .card-component .card-items .card-item .card-item-options .options-select ul li a {
+        padding: 0px 5px;
+    }
  }
