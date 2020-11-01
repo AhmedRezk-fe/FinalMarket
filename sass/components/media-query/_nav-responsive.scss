@@ -34,6 +34,7 @@
     }
     .click-nav.open {
         top: 32px;
+        position: fixed;
         ul li {
             background: #eb8589;
             height: 3px;
@@ -55,7 +56,7 @@
     // list nav
     .header-top-nav {
         .nav {
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 101;
             width: 75%;
@@ -79,11 +80,12 @@
                     height: 40px;
                     line-height: 40px;
                     position: relative;
+                    padding-left: 20px;
                 }
             }
         }
         .overlay-header{
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 100;
             width: 0%;
@@ -111,7 +113,7 @@
     }
     .header-top-nav {
         .nav {
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 101;
             width: 75%;
@@ -135,11 +137,12 @@
                     height: 40px;
                     line-height: 40px;
                     position: relative;
+                    padding-left: 20px;
                 }
             }
         }
         .overlay-header{
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 100;
             width: 0%;
@@ -167,7 +170,7 @@
     }
     .header-top-nav {
         .nav {
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 101;
             width: 75%;
@@ -195,7 +198,7 @@
             }
         }
         .overlay-header{
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 100;
             width: 0%;

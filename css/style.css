@@ -15431,7 +15431,8 @@ section.order-section {
         transition: 0.7s cubic-bezier(0, 1.59, 0, 1.2); }
 
 .header-top-nav .click-nav.open {
-  top: 32px; }
+  top: 32px;
+  position: fixed; }
   .header-top-nav .click-nav.open ul li {
     background: #eb8589;
     height: 3px; }
@@ -15444,7 +15445,7 @@ section.order-section {
 
 @media (max-width: 575.98px) {
   .header-top-nav .nav {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 101;
     width: 75%;
@@ -15466,9 +15467,10 @@ section.order-section {
         margin-bottom: 2px;
         height: 40px;
         line-height: 40px;
-        position: relative; }
+        position: relative;
+        padding-left: 20px; }
   .header-top-nav .overlay-header {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 100;
     width: 0%;
@@ -15488,7 +15490,7 @@ section.order-section {
     right: 16px;
     top: 123px; }
   .header-top-nav .nav {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 101;
     width: 75%;
@@ -15510,9 +15512,10 @@ section.order-section {
         margin-bottom: 2px;
         height: 40px;
         line-height: 40px;
-        position: relative; }
+        position: relative;
+        padding-left: 20px; }
   .header-top-nav .overlay-header {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 100;
     width: 0%;
@@ -15532,7 +15535,7 @@ section.order-section {
     right: 25px;
     top: 123px; }
   .header-top-nav .nav {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 101;
     width: 75%;
@@ -15556,7 +15559,7 @@ section.order-section {
         line-height: 40px;
         position: relative; }
   .header-top-nav .overlay-header {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: 100;
     width: 0%;
